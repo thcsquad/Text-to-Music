@@ -26,6 +26,4 @@ for i in range(0,len(paragraphs)):
 		paragraphs[i][j] = paragraphs[i][j].split(' ')
 
 length = lambda x: str(len(x))
-#for paragraph in paragraphs:
-	#for sentence in paragraph:
-                #compose.createWav(map(length, sentence))
+compose.createWav(map(length, paragraphs[0][0]))
